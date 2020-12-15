@@ -1,0 +1,30 @@
+/* modal styles */
+#modal-backdrop {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.75);
+}
+
+#modal-backdrop.visible {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    border: solid 1px #555;
+    background-color: #fff;
+    z-index: 99999;
+    width: 300 px;
+    height: 325px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal.visible {
+    display: block;
+}
